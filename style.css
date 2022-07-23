@@ -1,17 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-.header{
-    width: 1440px;
-    color: #FFFFFF;
-}
-.header-container{
-    display: flex;
-    background-color:rgb(242, 119, 92, 0.7) ;
-}
-.logo{
 
+.container {
+  padding: 0 120px;
 }
-.nav
+
+.container_header {
+  margin: 0 auto;
+  font-family: "Magra";
+  height: 90px;
+  display: flex;
+  background-color: rgba(242, 119, 92, 0.7);
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.logo {
+  display: flex;
+  gap: 6px;
+}
+
+.logo__img {
+  width: 30px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  gap: 42px;
+}
+.nav__list a {
+  font-family: "Red Hat Text";
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.login__button {
+  width: 103px;
+  height: 41px;
+  background-color: #0D606F;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: "Red Hat Text";
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
