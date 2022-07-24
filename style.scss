@@ -7,6 +7,9 @@
 .container{
     padding: 0 120px;
 }
+.header{
+    background: url(/assets/bg.png);
+}
 .container_header{
     margin: 0 auto;
     font-family: "Magra";
@@ -41,7 +44,7 @@ a{
     text-decoration:none ;
     color: #FFFFFF;
 }
-.login__button{
+.login_button{
     width: 103px;
     height: 41px;
     background-color: #0D606F;
@@ -53,4 +56,151 @@ a{
 .wrapper{
     width: 1440px;
     margin: 0 auto;
+    background-color: antiquewhite;
+}
+.container_search{
+    background-position: center -90px;
+    background-image: url(/assets/bg.png) ;
+    color: #FFFFFF;
+    .text_small{
+        padding: 46px 0;
+        font-style: italic;
+    }
+}
+.plan{
+    padding: 32px 308px 221px 0;
+}
+.plan__title{
+    font-size: 80px;
+    font-family: 'Aleo', serif;
+    letter-spacing: 0.8px;
+}
+.text_small{
+    font-size: 20px;
+    font-family: 'Aleo', serif;
+    line-height: 24px;
+}
+.search{
+    width: 892px;
+    height: 95px;
+    background-color:rgb(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 31px 0 18px;
+    border-radius: 15px;
+}
+.search__input{
+    height: 59px;
+    width: 616px;
+    background-color:rgb(255, 255, 255, 0.1) ;
+    outline: none;
+    border: 0;
+    font-size: 24px;
+    font-family: 'Aleo', serif;
+    font-style: italic;
+}
+.default_button{
+    width: 228px;
+    height: 59px;
+    border-radius: 10px;
+    background-color: #0D606F;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Red Hat Text';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.container_steps{
+    padding: 80px 120px 100px 120px;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Red Hat Text';
+    color: #F2785C;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.steps-wrapper{
+    display: flex;
+    gap: 170px;
+    justify-content: space-between;
+}
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#0D606F    ;
+}
+.step__icon{
+    padding-bottom: 30px;
+}
+.slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__items{
+    display: flex;
+    gap: 60px;
+    transition: 0.4s;
+}
+.slider__button{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(242, 120, 92, 0.5);
+    &:active{
+       background-color: #F2785C;
+    }
+}
+.slider__button.active{
+    background-color: #F2785C;
+}
+.slider__control{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding: 24px 0 40px 0;
+}
+.container_dest{
+    margin: 80px 0 0px 0;
+    overflow: hidden
+}
+.travel-stories__item{
+    display: flex;
+    color: #0D606F;
+    gap: 40px;
+}
+.travel-stories__title{
+    font-size: 35px;
+    font-family: 'Aleo';
+    padding-bottom: 24px;
+}
+.travel-stories{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    a{
+        text-decoration: underline;
+        color: #0D606F;
+        font-weight: 900;
+    }
+}
+.container_stories{
+    margin-bottom: 40px;
+}
+.container_footer{
+    display: flex;
+    gap: 328px;
+    background-image: url(/assets/Rectangle\ 33.png);
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
