@@ -4,6 +4,37 @@
   border: 0;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 228px;
+  height: 59px;
+  border-radius: 10px;
+  background-color: #0D606F;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Red Hat Text";
+  transition: 0.2s;
+}
+.button:hover {
+  background-color: #298191;
+}
+
 .container {
   padding: 0 120px;
 }
@@ -13,57 +44,46 @@
 }
 
 .container_header {
-  margin: 0 auto;
-  font-family: "Magra";
-  height: 90px;
   display: flex;
-  background-color: rgba(242, 119, 92, 0.7);
   justify-content: space-between;
   align-items: center;
+  font-family: "Magra";
+  height: 90px;
+  background-color: rgba(242, 119, 92, 0.7);
   color: #FFFFFF;
 }
 
 .logo {
   display: flex;
   gap: 6px;
+  user-select: none;
+  cursor: pointer;
 }
 
 .logo__img {
   width: 30px;
 }
 
-h1 {
-  font-size: 32px;
-}
-
 .nav__list {
-  list-style: none;
   display: flex;
-  margin: 0 auto;
   gap: 42px;
+  list-style: none;
 }
 .nav__list a {
   font-family: "Red Hat Text";
+  font-weight: 500;
   font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: #FFFFFF;
 }
 
 .login_button {
   width: 103px;
   height: 41px;
-  background-color: #0D606F;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-family: "Red Hat Text";
   font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .wrapper {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: antiquewhite;
 }
@@ -71,6 +91,7 @@ a {
 .container_search {
   background-position: center -90px;
   background-image: url(/assets/bg.png);
+  background-repeat: no-repeat;
   color: #FFFFFF;
 }
 .container_search .text_small {
@@ -79,7 +100,8 @@ a {
 }
 
 .plan {
-  padding: 32px 308px 221px 0;
+  max-width: 900px;
+  padding: 32px 0 221px 0;
 }
 
 .plan__title {
@@ -95,13 +117,12 @@ a {
 }
 
 .search {
-  width: 892px;
-  height: 95px;
-  background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 31px 0 18px;
+  height: 95px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 18px 0 40px;
   border-radius: 15px;
 }
 
@@ -116,23 +137,8 @@ a {
   font-style: italic;
 }
 
-.default_button {
-  width: 228px;
-  height: 59px;
-  border-radius: 10px;
-  background-color: #0D606F;
-  color: #FFFFFF;
-  font-size: 24px;
-  font-family: "Red Hat Text";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 0 auto;
-}
-
 .container_steps {
-  padding: 80px 120px 100px 120px;
+  padding: 80px 120px 0 120px;
 }
 
 .title {
@@ -146,8 +152,8 @@ a {
 
 .steps-wrapper {
   display: flex;
-  gap: 170px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
 
 .step {
@@ -155,6 +161,9 @@ a {
   flex-direction: column;
   align-items: center;
   color: #0D606F;
+}
+.step:nth-of-type(1) {
+  margin-right: 35px;
 }
 
 .step__icon {
@@ -169,10 +178,14 @@ a {
   align-items: center;
 }
 
-.slider__items {
+.slider-images-wrapper {
   display: flex;
   gap: 60px;
   transition: 0.4s;
+}
+
+.slider__image {
+  cursor: pointer;
 }
 
 .slider__button {
@@ -180,9 +193,14 @@ a {
   height: 20px;
   border-radius: 100%;
   background-color: rgba(242, 120, 92, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.slider__button:hover {
+  background-color: #F2785C;
 }
 .slider__button:active {
-  background-color: #F2785C;
+  background-color: #ee5735;
 }
 
 .slider__button.active {
@@ -192,7 +210,7 @@ a {
 .slider__control {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   padding: 24px 0 40px 0;
 }
 
@@ -217,24 +235,43 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 40px;
 }
 .travel-stories a {
   text-decoration: underline;
   color: #0D606F;
   font-weight: 900;
+  transition: 0.2s;
+}
+.travel-stories a:hover {
+  color: #4db5c7;
 }
 
 .container_stories {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0 40px 0;
 }
 
 .container_footer {
   display: flex;
-  gap: 328px;
+  justify-content: flex-end;
   background-image: url(/assets/Rectangle\ 33.png);
+  height: 60px;
+}
+.container_footer p {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+
+.footer-info-wrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  gap: 330px;
 }
 
 /*# sourceMappingURL=style.css.map */
